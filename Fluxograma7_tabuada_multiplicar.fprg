@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="thiag"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-13 04:54:27 "/>
+        <attribute name="created" value="dGhpYWc7SE9NRTsyMDIxLTAyLTEzOyIwNDoxMjowMSAiOzE5OTY="/>
+        <attribute name="edited" value="dGhpYWc7SE9NRTsyMDIxLTAyLTEzOyIwNDo1NDoyNyAiOzY7MjEyMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cont, num, limite, tabulador" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o valor num&#233;rico que voc&#234; quer para sua tabuada: &quot;" newline="True"/>
+            <input variable="tabulador"/>
+            <assign variable="num" expression="0"/>
+            <assign variable="limite" expression="10"/>
+            <while expression="num &lt;= limite">
+                <assign variable="cont" expression="tabulador * num"/>
+                <output expression="tabulador &amp; &quot; X &quot; &amp; num &amp; &quot; = &quot; &amp; cont" newline="True"/>
+                <assign variable="num" expression="num + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

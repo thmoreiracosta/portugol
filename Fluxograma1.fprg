@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="thiag"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-13 04:05:05 "/>
+        <attribute name="created" value="dGhpYWc7SE9NRTsyMDIxLTAyLTEzOyIwMjo1ODoyNyAiOzIwMTI="/>
+        <attribute name="edited" value="dGhpYWc7SE9NRTsyMDIxLTAyLTEzOyIwNDowNTowNSAiOzM7MjExMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, n4, soma, media" type="Real" array="False" size=""/>
+            <declare name="aluno" type="String" array="False" size=""/>
+            <output expression="&quot;Qual nome do aluno?&quot;" newline="True"/>
+            <input variable="aluno"/>
+            <output expression="aluno &amp; &quot;, entre com suas quatro notas, para saber sua situa&#231;&#227;o, por favor.&quot;" newline="True"/>
+            <input variable="n1"/>
+            <input variable="n2"/>
+            <input variable="n3"/>
+            <input variable="n4"/>
+            <assign variable="soma" expression="n1 + n2 + n3 + n4"/>
+            <assign variable="media" expression="(n1 + n2 + n3 + n4)/ 4"/>
+            <output expression="&quot;O somat&#243;rio das suas notas foi de: &quot; &amp; soma" newline="True"/>
+            <output expression="&quot;Sua m&#233;dia &#233; de: &quot; &amp; media" newline="True"/>
+            <if expression="media &gt; 7.0">
+                <then>
+                    <output expression="&quot;PARAB&#201;NS! &quot; &amp; aluno &amp; &quot; Voc&#234; foi APROVADO&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente &quot; &amp; aluno &amp; &quot;, voc&#234; est&#225; REPROVADO&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
